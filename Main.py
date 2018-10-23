@@ -9,7 +9,7 @@ def main():
 	bin=0
 	open('RTT_6/temp1.txt', 'w').close()
 	ase=[11, 17, 19, 21]
-	for I in xrange(1,2):
+	for I in xrange(0,100):
 		pass
 		pres,ares,price,load=[],[],[],[]
 		lres,bres,bg,pb=[],[],[],[]
@@ -31,10 +31,10 @@ def main():
 			xr.append(bin)
 			ob+=res[0]
 			xr.append(res[0])
-			print(ob)
-		#print(pb)
-		#with open("RTT_6/res_6.txt", "a+") as f:
-			#f.write(str(ob)+"\n")
+			#print(ob)
+		print(ob)
+		with open("RTT_6/res_6.txt", "a+") as f:
+			f.write(str(ob)+"\n")
 
 if __name__ == '__main__':
     main()
